@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+ }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+  align-items: center; /* Alinha os elementos verticalmente */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  
+}
+
+main {
+  padding: 20px;
+  
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos da figura */
+.figura {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.figura img {
+  display: block;
+  margin: auto;
+  width: 20%;
+  border-radius: 5px;
+}
+
+p{
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.assinar {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+
+#contrastOptions {
+  text-align: center;
+}
+#contrastOptions button {
+  margin: 5px;
+}
+
+/* Estilos de contraste */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.black-and-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.blue-contrast {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.green-contrast {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.yellow-contrast {
+  background-color: #ffc107;
+  color: #000;
+}
+
+ /* Estilos para a div de notícias */
+ .container {
+  text-align: center; /* Centraliza horizontalmente o conteúdo */
+}
+.noticias {
+  padding: 10px;
+  display: inline-block; /* Para permitir a centralização */
+}
+
+.noticia {
+  display: inline-block; /* Para as notícias ficarem uma ao lado da outra */
+  width: calc(20% - 10px); /* 20% da largura da div de notícias com margem entre elas */
+  margin-right: 10px; /* Espaçamento entre as notícias */
+  vertical-align: top; /* Alinha as notícias no topo */
+}
+.noticia img {
+  width: 100%; /* Para a imagem ocupar 100% da largura da div */
+  height: auto; /* Para manter a proporção da imagem */
+  margin-bottom: 5px; /* Espaçamento entre a imagem e o conteúdo */
+}
+.leia-mais {
+  color: blue; /* Cor do link */
+}
+
+.noticias {
+  margin-bottom: 60px; /* Adicione espaço suficiente para o rodapé */
+}
+
+/* Estilos para dispositivos menores que 768px */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav ul {
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  .figura img {
+    width: 100%;
+  }
+  
+  .noticia {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para dispositivos menores que 576px */
+@media screen and (max-width: 576px) {
+  nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: block;
+  }
+  
+  nav ul li {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    text-align: left;
+  }
+  
+  .noticia {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
